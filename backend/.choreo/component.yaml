@@ -9,12 +9,12 @@ endpoints:
       networkVisibilities:
         - Project
         - Public
-#dependencies:
-#    connectionReferences:
-#    - name: openai-connection
-#      resourceRef: thirdparty:openai/v1
-
 dependencies:
     connectionReferences:
     - name: openai-connection
-      resourceRef: service:/choose-your-own-adventure/openai/v1/proxy/PROJECT
+      resourceRef: thirdparty:openai/v1
+
+#dependencies:
+#    connectionReferences:
+#    - name: openai-connection
+#      resourceRef: service:/choose-your-own-adventure/openai/v1/proxy/PROJECT
